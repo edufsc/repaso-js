@@ -1,0 +1,45 @@
+/* 
+Es buena práctica declarar los estilos de menos a más específico para evitar conflictos entre ellos.
+En este caso:
+1. * todo
+2. etiquetas
+3. .clases
+4. #ids 
+*/
+
+* {
+    font-family: Verdana, sans-serif;
+    font-size: 16px;
+}
+
+main {
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+}
+
+.sent-text {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #dddddd;
+}
+
+#my-form {
+    text-align: center;
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+    padding: 2rem 1rem;
+}
+
+#name,
+#send-btn {
+    padding: 0.5rem;
+    border-color: #cccccc;
+}
+
+#name {
+    border-radius: 10px 0 0 10px;
+}
+
+#send-btn {
+    border-radius: 0 10px 10px 0;
+}

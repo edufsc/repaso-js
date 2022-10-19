@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <!-- Para que se vea "bien" en smartphone -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Probando jQuery</title>
+    <!-- Las diferentes versiones de jQuery se pueden encontrar en https://releases.jquery.com/
+    Durante el desarrollo se puede usar la versión "uncompressed" si queremos revisar el código fuente de jQuery,
+    pero en producción (entorno real) se debe usar la versión "minified". Es el mismo código pero sin espacios ni saltos de línea (más ligero)
+    Esto es aplicable a cualquier JS o CSS de terceros que queramos utilizar, como Bootstrap.
+    -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <!-- Si nuestro script utiliza jQuery, debe cargarse después de jQuery -->
+    <script src="./test-jquery.js"></script>
+    <link rel="stylesheet" href="./main.css" />
+</head>
+
+<body>
+    <main>
+        <section id="my-form">
+            <input id="name" placeholder="Nombre..." type="text" />
+            <button id="send-btn">Enviar</button>
+        </section>
+
+        <section id="container"></section>
+    </main>
+
+</body>
+
+</html>
